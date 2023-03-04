@@ -14,17 +14,6 @@ public class Module extends Entity {
         super(id, name);
     }
 
-    /*public static function new(string $name, string $description): Module {
-		return (new Module())
-			->setDescription($description)
-			->setName($name);
-	}     ??????*/
-
-    public void __construct() {
-        this.lessons = new ArrayList<>();
-        this.grades = new ArrayList<>();
-    }
-
     public Course getCourse() {
         return this.course;
     }
@@ -47,10 +36,5 @@ public class Module extends Entity {
 
     public void setLessons(List<Lesson> lessons) {
         this.lessons = lessons;
-    }
-
-    public  void addLessons(Lesson lesson) {
-        this.lessons.add(lesson);
-        lesson.setModule(this);
     }
 }

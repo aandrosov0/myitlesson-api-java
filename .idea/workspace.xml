@@ -10,33 +10,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d891f242-2ab9-48b0-9441-09d1279e5582" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/MyItLessonAPI_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/apache_httpcomponents_client5_httpclient5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/google_code_gson.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MyItLessonAPI.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/gson-2.10.1-javadoc.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/gson-2.10.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/httpclient5-5.2.1-javadoc.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/httpclient5-5.2.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/httpcore5-5.2-javadoc.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/httpcore5-5.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/httpcore5-h2-5.2-javadoc.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/httpcore5-h2-5.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/slf4j-api-1.7.36-javadoc.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/slf4j-api-1.7.36.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ru/myitlesson/MyItLessonAPI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ru/myitlesson/entity/Attend.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ru/myitlesson/entity/Course.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ru/myitlesson/entity/Entity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ru/myitlesson/entity/Grade.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ru/myitlesson/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ru/myitlesson/entity/Attend.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/myitlesson/entity/Attend.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ru/myitlesson/entity/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/myitlesson/entity/Course.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ru/myitlesson/entity/Grade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/myitlesson/entity/Grade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ru/myitlesson/entity/Lesson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/myitlesson/entity/Lesson.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ru/myitlesson/entity/Module.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/myitlesson/entity/Module.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ru/myitlesson/entity/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/myitlesson/entity/Task.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +33,19 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="7f7815a1-3bfd-4bee-82c0-1e4d9287a830" />
+        <option name="url" value="https://github.com/aandrosov0/myitlesson-api.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />

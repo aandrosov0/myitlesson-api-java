@@ -9,15 +9,6 @@ public class Grade {
     protected Module module;
     protected List<User> users;
 
-    public void __construct() {
-        this.users = new ArrayList<>();
-    }
-
-    /* public static function new(int $value): Grade {
-        return (new Grade())
-            ->setValue($value);
-    }     ?????*/
-
     public int getValue() {
         return this.value;
     }
@@ -45,10 +36,4 @@ public class Grade {
     public int getId() {
         return this.id;
     }
-
-    public void addUsers (User user) {
-        this.users.add(user);
-        user.getGrades().add(this);
-    }
-
 }

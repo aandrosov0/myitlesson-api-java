@@ -9,12 +9,6 @@ public class Task extends Entity {
         super(id, name);
     }
 
-    /*public static function new(string $name, string $content): Task {
-		return (new Task())
-			->setContent($content)
-			->setName($name);
-	}     ????*/
-
     public String getContent() {
         return this.content;
     }

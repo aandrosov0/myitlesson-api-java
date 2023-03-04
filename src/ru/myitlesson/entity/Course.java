@@ -18,11 +18,6 @@ public class Course extends Entity {
         this.users = new ArrayList<>();
         this.attends = new ArrayList<>();
     }
-    /*public static function new(string $name, string $description): Course {
-		return (new Course())
-			->setDescription($description)
-			->setName($name);
-	}    ?????*/
 
     public void setDescription(String description) {
         this.description = description;
@@ -42,27 +37,4 @@ public class Course extends Entity {
     public void setUsers(List<User> users) {
         this.users = users;
     }
-
-    public void addModules(Module module) {
-        this.modules.add(module);
-        module.setCourse(this);
-    }
-
-    public void addUser(User user) {
-        this.users.add(user);
-        user.getCourses().add(this);
-    }
-
-    public void removeUser (User user) {
-        this.users.removeElement(user);
-        user.getCourses().removeElement(this);
-    }
-
-
-
-
-
-
-
-
 }

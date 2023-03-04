@@ -5,8 +5,11 @@ import java.util.List;
 
 public class Lesson extends Entity {
 
-    /*public const CONTROL_TYPE = 0;
-    public const LESSON_TYPE = 1;   ??????*/
+    public enum Type {
+        CONTROL_TYPE,
+        LESSON_TYPE,
+    }
+
     protected String content;
     protected Module module;
     protected int type;
@@ -15,17 +18,6 @@ public class Lesson extends Entity {
     protected Lesson(int id, String name) {
         super(id, name);
     }
-
-    public void __construct() {
-        this.tasks = new ArrayList<>();
-    }
-
-    /*public static function new(string $name, string $content, int $type): Lesson {
-		return (new Lesson())
-			->setContent($content)
-			->setType($type)
-			->setName($name);
-	}     ?????*/
 
     public String getContent(String content) {
         return this.content;
@@ -58,17 +50,4 @@ public class Lesson extends Entity {
     public void setTasks(List<Task> tasks) {
         this.tasks = tasks;
     }
-
-    public void addTasks(Task task) {
-        this.tasks.add(task);
-        task.setLesson(this);
-    }
-
-    /*public static function typeToString(int $type): string|null {
-		switch($type) {
-			case static::CONTROL_TYPE: return 'Контрольная';
-			case static::LESSON_TYPE: return 'Урок';
-		}
-		return null;
-	}    ?????*/
 }

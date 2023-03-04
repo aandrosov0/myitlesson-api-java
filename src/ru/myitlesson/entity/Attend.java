@@ -1,26 +1,15 @@
 package ru.myitlesson.entity;
 
-import java.util.ArrayList;
+import java.time.LocalDateTime;
 import java.util.List;
 
 public class Attend {
-    /*public const IS_VALUE = 0;
-    public const ISNT_VALUE = 1;    ????*/
     protected int id;
     protected int value;
-    protected  DateTime date;
+    protected LocalDateTime date;
     protected Course course;
 
     protected List<User> users;
-
-    public void __construct() {
-        this.users = new ArrayList<>();
-    }
-
-    /* public static function new(int $value): Attend {
-        return (new Attend())
-            ->setValue($value);
-    }   ????*/
 
     public int getId () {
         return this.id;
@@ -34,15 +23,15 @@ public class Attend {
         return String.valueOf(this.value);
     }
 
-    public void setValue (String value) {
+    public void setValue(int value) {
         this.value = value;
     }
 
-    public DateTime getDate() {
+    public LocalDateTime getDate() {
         return this.date;
     }
 
-    public void setDate(DateTime date) {
+    public void setDate(LocalDateTime date) {
         this.date = date;
     }
 
@@ -59,11 +48,6 @@ public class Attend {
 
     public void setUsers(List<User> users) {
         this.users = users;
-    }
-
-    public void addUser(User user) {
-        this.users.add(user);
-        user.getAttends().add(this);
     }
 }
 
