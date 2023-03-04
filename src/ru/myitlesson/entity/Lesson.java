@@ -15,7 +15,7 @@ public class Lesson extends Entity {
     protected int type;
     protected List<Task> tasks;
 
-    protected Lesson(int id, String name) {
+    public Lesson(int id, String name) {
         super(id, name);
     }
 

@@ -30,7 +30,7 @@ public class User extends Entity {
     protected List<Course> courses;
     protected List<Grade> grades;
 
-    protected User(int id, String name, String firstName, String lastName, Role role, List<Course> courses, List<Grade> grades, List<Attend> attends) {
+    public User(int id, String name, String firstName, String lastName, Role role, List<Course> courses, List<Grade> grades, List<Attend> attends) {
         super(id, name);
         this.firstName = firstName;
         this.lastName = lastName;

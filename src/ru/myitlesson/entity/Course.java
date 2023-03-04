@@ -9,7 +9,7 @@ public class Course extends Entity {
     protected List<User> users;
     protected List<Attend> attends;
 
-    protected Course(int id, String name) {
+    public Course(int id, String name) {
         super(id, name);
     }
 

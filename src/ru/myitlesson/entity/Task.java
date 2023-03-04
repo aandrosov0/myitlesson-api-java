@@ -5,7 +5,7 @@ public class Task extends Entity {
     protected String content;
     protected Lesson lesson;
 
-    protected Task(int id, String name) {
+    public Task(int id, String name) {
         super(id, name);
     }
 

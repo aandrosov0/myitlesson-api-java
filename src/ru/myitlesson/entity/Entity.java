@@ -4,7 +4,7 @@ public abstract class Entity {
     protected final int id;
     protected String name;
 
-    protected Entity(int id, String name) {
+    public Entity(int id, String name) {
         this.id = id;
         this.name = name;
     }
