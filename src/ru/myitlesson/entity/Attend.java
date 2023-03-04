@@ -11,6 +11,15 @@ public class Attend {
 
     protected List<User> users;
 
+    public Attend(int id, int value, LocalDateTime date, Course course, List<User> users) {
+        this.id = id;
+        this.value = value;
+        this.date = date;
+        this.course = course;
+        this.users = users;
+
+    }
+
     public int getId () {
         return this.id;
     }

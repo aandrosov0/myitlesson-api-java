@@ -10,8 +10,12 @@ public class Module extends Entity {
     protected List<Lesson> lessons;
     protected List<Grade> grades;
 
-    protected Module(int id, String name) {
+    protected Module(int id, String name, Course course, String description, List<Lesson> lessons, List<Grade> grades) {
         super(id, name);
+        this.course = course;
+        this.description = description;
+        this.lessons = lessons;
+        this.grades = grades;
     }
 
     public Course getCourse() {

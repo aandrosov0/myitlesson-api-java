@@ -5,8 +5,10 @@ public class Task extends Entity {
     protected String content;
     protected Lesson lesson;
 
-    public Task(int id, String name) {
+    public Task(int id, String name, String content, Lesson lesson) {
         super(id, name);
+        this.content = content;
+        this.lesson = lesson;
     }
 
     public String getContent() {

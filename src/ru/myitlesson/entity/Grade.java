@@ -9,6 +9,13 @@ public class Grade {
     protected Module module;
     protected List<User> users;
 
+    public Grade(int id, int value, Module module, List<User> users) {
+        this.id = id;
+        this.value = value;
+        this.module = module;
+        this.users =users;
+    }
+
     public int getValue() {
         return this.value;
     }

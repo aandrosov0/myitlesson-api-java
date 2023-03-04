@@ -9,13 +9,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d891f242-2ab9-48b0-9441-09d1279e5582" name="Changes" comment="refactoring">
+    <list default="true" id="d891f242-2ab9-48b0-9441-09d1279e5582" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_4_23__6_59_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_4_23__6_59_PM__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ru/myitlesson/entity/Attend.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/myitlesson/entity/Attend.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ru/myitlesson/entity/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/myitlesson/entity/Course.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ru/myitlesson/entity/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/myitlesson/entity/Entity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ru/myitlesson/entity/Grade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/myitlesson/entity/Grade.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ru/myitlesson/entity/Lesson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/myitlesson/entity/Lesson.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ru/myitlesson/entity/Module.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/myitlesson/entity/Module.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ru/myitlesson/entity/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/myitlesson/entity/Task.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ru/myitlesson/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/myitlesson/entity/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,27 +34,12 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
-  </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN"
-  }
-}]]></component>
-  <component name="GithubPullRequestsUISettings">
-    <option name="selectedUrlAndAccountId">
-      <UrlAndAccount>
-        <option name="accountId" value="7f7815a1-3bfd-4bee-82c0-1e4d9287a830" />
-        <option name="url" value="https://github.com/aandrosov0/myitlesson-api.git" />
-      </UrlAndAccount>
-    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2MHZmXeA5DPixDBQBckk9rWZZpe" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <OptionsSetting value="false" id="Update" />
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -77,25 +65,26 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="d891f242-2ab9-48b0-9441-09d1279e5582" name="Changes" comment="" />
+      <changelist id="bf3ee3c0-d4bc-4a80-866b-1bed27af99f9" name="Changes" comment="" />
       <created>1677426628168</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1677426628168</updated>
     </task>
-    <task id="LOCAL-00001" summary="refactoring">
-      <created>1677945914887</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1677945914887</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="refactoring" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactoring" />
   </component>
 </project>

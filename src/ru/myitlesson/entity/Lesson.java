@@ -15,8 +15,12 @@ public class Lesson extends Entity {
     protected int type;
     protected List<Task> tasks;
 
-    public Lesson(int id, String name) {
+    public Lesson(int id, String name, String content, Module module, int type, List<Task> tasks) {
         super(id, name);
+        this.content = content;
+        this.module = module;
+        this.type = type;
+        this.tasks = tasks;
     }
 
     public String getContent(String content) {
