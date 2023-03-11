@@ -10,11 +10,15 @@ import org.apache.hc.client5.http.impl.classic.HttpClients;
 import org.apache.hc.core5.http.*;
 import org.apache.hc.core5.http.io.entity.EntityUtils;
 import org.apache.hc.core5.http.message.BasicNameValuePair;
+import ru.myitlesson.exception.APIException;
 
 import java.io.IOException;
+import java.lang.reflect.InvocationTargetException;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
+import java.util.Optional;
 
 public class MyItLessonAPI {
     public static final String URL = "https://myitlesson.ru";
@@ -44,19 +48,40 @@ public class MyItLessonAPI {
             String responseStr = EntityUtils.toString(httpEntity, StandardCharsets.UTF_8);
             EntityUtils.consume(httpEntity);
 
+            System.out.println(responseStr);
             JsonObject jsonObject = gson.fromJson(responseStr, JsonObject.class);
-            JsonPrimitive jsonString = jsonObject.getAsJsonPrimitive("err");
+            JsonPrimitive jsonError = jsonObject.getAsJsonPrimitive("err");
 
-            if(jsonString != null) {
-                throw new APIException(jsonString.toString());
+            if(jsonError != null) {
+                throw generateException(jsonError.getAsString(), jsonObject.getAsJsonPrimitive("status_code").getAsInt());
             }
 
-            return gson.fromJson(jsonObject, tClass);
+            JsonObject jsonData = jsonObject.getAsJsonObject("data");
+
+            if(jsonData != null) {
+                return gson.fromJson(jsonData, tClass);
+            }
+
+            return null;
         });
     }
 
     public <T> T sendPostWithToken(String url, List<NameValuePair> params, Class<T> tClass) throws IOException, APIException {
         params.add(new BasicNameValuePair("token", token));
         return sendPost(url, params, tClass);
+    }
+
+    private APIException generateException(String err, int statusCode) {
+        Optional<StatusErrorCode> statusErrorCode = Arrays.stream(StatusErrorCode.values()).filter(error -> error.getStatusCode() == statusCode).findFirst();
+
+        if(!statusErrorCode.isPresent()) {
+            throw new APIException("Unknown exception");
+        }
+
+        try {
+            return statusErrorCode.get().makeException(err);
+        } catch (InstantiationException | IllegalAccessException | NoSuchMethodException | InvocationTargetException e) {
+            throw new RuntimeException(e);
+        }
     }
 }

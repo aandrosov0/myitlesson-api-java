@@ -17,7 +17,6 @@ public class Attend {
         this.date = date;
         this.course = course;
         this.users = users;
-
     }
 
     public int getId () {

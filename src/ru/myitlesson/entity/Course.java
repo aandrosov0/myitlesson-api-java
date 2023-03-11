@@ -1,6 +1,5 @@
 package ru.myitlesson.entity;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class Course extends Entity {
@@ -17,10 +16,8 @@ public class Course extends Entity {
         this.attends = attends;
     }
 
-    public void __construct() {
-        this.modules = new ArrayList<>();
-        this.users = new ArrayList<>();
-        this.attends = new ArrayList<>();
+    public Course() {
+
     }
 
     public void setDescription(String description) {

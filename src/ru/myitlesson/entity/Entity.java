@@ -1,12 +1,16 @@
 package ru.myitlesson.entity;
 
 public abstract class Entity {
-    protected final int id;
+    protected int id;
     protected String name;
 
     public Entity(int id, String name) {
         this.id = id;
         this.name = name;
+    }
+
+    public Entity() {
+
     }
 
     public int getId() {

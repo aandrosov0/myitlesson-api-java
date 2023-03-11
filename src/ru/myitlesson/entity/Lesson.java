@@ -1,6 +1,5 @@
 package ru.myitlesson.entity;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class Lesson extends Entity {
